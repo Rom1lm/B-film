@@ -1,8 +1,8 @@
 import { create } from "zustand";
 
 export const useStore = create((set, get) => ({
-  logements: [],
-  setLogements: (logements) => set({ logements }),
+  films: [],
+  setFilms: (films) => set({ films }),
 
   isFavorite: [],
   basculerfavs: (id) => {
