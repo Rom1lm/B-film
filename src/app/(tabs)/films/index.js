@@ -11,9 +11,6 @@ export default function Films() {
   const [erreur, setErreur] = useState(null);
   const [categorie, setCategorie] = useState("Toutes");
   const [mode, setMode] = useState("succes");
-
-  // Numéro de la dernière requête : les réponses peuvent arriver dans le désordre,
-  // on ignore celles qui ne sont pas la dernière demandée.
   const derniereRequete = useRef(0);
 
   const afficherResultat = (numero, requete) => {
