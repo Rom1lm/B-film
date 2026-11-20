@@ -1,18 +1,13 @@
 import { create } from "zustand";
 
 export const useStore = create((set, get) => ({
-  films: [],
-  setFilms: (films) => set({ films }),
-
-  isFavorite: (id) => {
-    return useFavorisStore.getState().films.includes(id);
-  },
-  basculerfavs: (id) => {
+  isFavorite: [],
+  basculerfavs: (film) => {
     const isFavorite = get().isFavorite;
-    if (isFavorite.includes(id)) {
-      set({ isFavorite: isFavorite.filter((fav) => fav !== id) });
+    if (isFavorite.some((fav) => fav.id === film.id)) {
+      set({ isFavorite: isFavorite.filter((fav) => fav.id !== film.id) });
     } else {
-      set({ isFavorite: [...isFavorite, id] });
+      set({ isFavorite: [...isFavorite, film] });
     }
   },
 }));
