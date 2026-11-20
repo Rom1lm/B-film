@@ -1,6 +1,6 @@
 import { Stack } from "expo-router";
 
-export default function Layout() {
+export default function FilmsLayout() {
   return (
     <Stack>
       <Stack.Screen name="index" options={{ title: "Explorer" }} />
