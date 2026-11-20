@@ -1,0 +1,8 @@
+{
+  "expo": {
+    "name": "Ma vidéothèque",
+    "slug": "b-film",
+    "scheme": "bfilm",
+    "plugins": ["expo-router"]
+  }
+}
