@@ -3,6 +3,9 @@
     "name": "Ma vidéothèque",
     "slug": "b-film",
     "scheme": "bfilm",
-    "plugins": ["expo-router"]
+    "plugins": [
+      "expo-router",
+      "expo-status-bar"
+    ]
   }
 }
