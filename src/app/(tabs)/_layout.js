@@ -4,8 +4,8 @@ export default function TabsLayout() {
     return (
         <NativeTabs>
             <NativeTabs.Trigger name="films">
-                <NativeTabs.Trigger.Label>Explorer</NativeTabs.Trigger.Label>
-                <NativeTabs.Trigger.Icon sf="magnifyingglass" md="search"/>
+                <NativeTabs.Trigger.Label>Films</NativeTabs.Trigger.Label>
+                <NativeTabs.Trigger.Icon sf="film" md="movie" />
             </NativeTabs.Trigger>
             <NativeTabs.Trigger name="favoris">
                 <NativeTabs.Trigger.Label>Favoris</NativeTabs.Trigger.Label>
